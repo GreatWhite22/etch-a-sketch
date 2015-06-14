@@ -1,19 +1,15 @@
 $(document).ready(function(){
-	gridMaker(16);
-
-});
-
-function gridMaker(size){
-	var count = 0;
-	while(size>0){
-		$('#grid').append(<div class='board'></div>);
-		$('.board').css("height", "100px");
-		$('.board').css("width", "100px");
+	var size = 16;
+	var width = 16;
+	$("#grid").append("<table class='board'>test</table>");
+	for (var i = 16; i > 0; i--) {
+		$(".board").append		
+		$('.board').css("height", "50px");
+		$('.board').css("width", "50px");
 		$('.board').css("background-color", "gray");
-		$('.board').css({"border-color": "#C1E0FF", 
-             "border-width":"1px", 
+		$('.board').css({"border-color": "black", 
+             "border-width":"2px", 
              "border-style":"solid"});
-		size--;
+		size --;
 	}
-	return;
-}
+});
